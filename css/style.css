@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: blue;
+}
+
+.w-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: blue;
+  height: 100vh;
+  font-family: Roboto;
+  padding-top: 3em;
+}
+.logo {
+  width: 50px;
+}
+.brand-logo {
+  display: flex;
+  align-items: flex-start;
+  padding: 30px 40px 1em;
+}
+
+.form-card {
+  position: relative;
+  background-color: white;
+  border-radius: 12px;
+  padding: 0rem 3.5rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 443px;
+}
+
+.sp-input {
+  font-size: 14px;
+  padding: 0px 8px;
+  height: 42px;
+  border: none;
+  border-bottom: solid 3px rgba(4, 8, 250, 0.945);
+  background: transparent;
+  min-width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+  color: #000;
+}
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2em;
+}
+
+.btn {
+  border: none;
+  padding: 8px 30px;
+  background: #009fff;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: black;
+  color: white;
+}
+.btn2 {
+  border: none;
+  background: #ffff;
+  color: grey;
+  height: 42px;
+  max-width: 227px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  position: relative;
+  width: 5%;
+  right: 48px;
+  bottom: -4px;
+}
+.btn2 > img {
+  width: 10%;
+  margin-left: 50px;
+}
+.img-icon {
+  position: relative;
+  right: 39px;
+  top: 10px;
+}
+.img-text {
+  position: relative;
+  top: 4px;
+  right: 10px;
+}
+.btn-container-span {
+  padding-top: 12px;
+  color: gray;
+}
+
+.form-card-h3 {
+  color: gray;
+  padding-top: 1em;
+}
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+a:hover {
+  color: black;
+}
+
+.floating-label {
+  position: relative;
+  margin-bottom: 2em;
+}
+.floating-label label {
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+  margin-bottom: 10em;
+}
+.floating-label input:not(:placeholder-shown) {
+  padding: 28px 0px 12px 0px;
+}
+.floating-label input:not(:placeholder-shown) + label {
+  transform: translateY(-10px);
+  opacity: 0.7;
+}
+.footer {
+  text-align: center;
+  color: #fff;
+  margin-top: 2em;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 520px) {
+  .w-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+  .img-text {
+    position: relative;
+    top: 7px;
+    right: 20px;
+  }
+  .btn-container-span {
+    padding-top: 12px;
+    text-align: center;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .btn2 {
+    font-size: 11px;
+  }
+
+  .form-card {
+    position: relative;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    max-width: 187px;
+  }
+  .sp-input {
+    font-size: 14px;
+    padding: 0px 8px;
+    height: 42px;
+    border: none;
+    border-bottom: solid 3px rgba(4, 8, 250, 0.945);
+    background: transparent;
+    min-width: 0px;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+    color: #000;
+  }
+  .form-card-h3 {
+    color: gray;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 668px) {
+  .w-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+  }
+  .form-card {
+    position: relative;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 443px;
+  }
+}
